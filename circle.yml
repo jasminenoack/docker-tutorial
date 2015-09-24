@@ -1,12 +1,12 @@
-machine: 
-    services:
-        - docker
+machine:
+  services:
+    - docker
 
 dependencies:
-    override:
-        - pip install -r requirements.txt
+  override:
+    - pip install -r requirements.txt
 
-test: 
-    override:
-        - docker-compose run -d --no-deps web
-        - python web/tests.py
+test:
+  override:
+    - docker-compose run -d --no-deps web
+    - python web/tests.py
