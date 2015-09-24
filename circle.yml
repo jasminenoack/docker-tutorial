@@ -6,6 +6,7 @@ dependencies:
   override:
     - pip install -r requirements.txt
     - pip install docker-compose
+    - boot2docker uprgade 
 
 test:
   override:
